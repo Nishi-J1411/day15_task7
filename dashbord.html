@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dashbord.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Dashboard</title>
+  <style>
+    /* .my-col{
+      border: 2px solid green;
+    }
+    .my-row{
+      border: 2px solid red;
+    } */
+    /* .my-td{
+      border: 2px solid blue;
+    }
+    tbody{
+      border: 2px solid purple;
+    } */
+  </style>
+</head>
+
+<body>
+  
+    <div class="container-fluid my-container">
+      <div class="row my-row">
+        <!-- ---------------------------Side Nav------------------------------------ -->
+        <div class="col col-sm-2 my-col d-sm-none d-lg-block d-xl-block ">
+          <h3 class="title"> Gnd  <span> leads</span></h3>
+          <nav class="nav flex-column ">
+            <a class="nav-link active " href="#"> <i class="fa fa-home fa-fw"></i>Dashboard</a>
+            <a class="nav-link" href="#"><i class=" fa fa-asterisk fa-fw"></i>Leads</a>
+            <a class="nav-link" href="#"><i class="fa fa-envelope fa-fw"></i>Emails</a>
+            <a class="nav-link" href="#"><i class="fa fa-calendar-o fa-fw "></i>Form Submission</a>
+            <a class="nav-link" href="#"><i class="fa fa-file-powerpoint-o fa-fw"></i>Page Views</a>
+            <a class="nav-link" href="#"><i class="fa fa-book fa-fw"></i>Reports</a>
+            
+            <!-- <a class="nav-link disabled" href="#">Form Submission</a> -->
+          </nav>
+          <!-- <div class="row  my-row" id="my-row"> -->
+                <ul class="user-category">
+                  <li class="active-user">
+                    <a href="#" class="userlink"> 130+ Acitve Users</a>
+                <button class="viewall"> <a href="#" class="view_all"> View All</a> </button>
+                  </li>
+                  <li class="user-type">
+                   <p><i class=" fa fa-mobile fa-fw"></i> Iphone 6s Plus</p>
+                    <a href="#" class="activeuser">+ 26 Active </a>
+                  </li>
+                  <li class="user-type">
+                    <p> <i class=" fa fa-laptop fa-fw"></i>Macbook 2017 </p>
+                    
+                    <a href="#" class="activeuser">+ 20 Active </a>
+                  </li>
+                  <li class="profile">
+                       <a href="#" class="admin-profile">Atif Shakir <br> <span class="member-type"> Pro Member</span></a> 
+                  </li>
+                </ul>
+          <!-- </div> -->
+        </div>
+        <!-- --------------------------Main section--------------------------------------------- -->
+        <div class="col col-sm-10 my-col">
+          <!-- ---------------------------Search bar----------------------------- -->
+          <form class="form-inline">
+            <input class="form-control " type="search" id="search"placeholder="Search" aria-label="Search"> 
+            <button class="filter"> 
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Filter
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Item1</a>
+              <a class="dropdown-item" href="#">Item2</a>
+              <div class="dropdown-divider"></div>
+              </button> 
+              <button class="btn" id="notification"><i class="fa fa-bell"></i> 0</button>  
+              <button class="btn2" id="profile"> <a href="#"></a></button>  
+          </form>
+          <!-- --------------------- Overview secction-------------------------------------------- -->
+            <div class="row my-row overview-row">
+           <h4 id="Analytics-Overview"> Analytics Overview</h4>
+             <!-- ----------------------History button-------------------------------------- -->
+              <button class="filter" id="history"> 
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Last 30 Days
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Item1</a>
+                <a class="dropdown-item" href="#">Item2</a>
+                <div class="dropdown-divider"></div>
+              </button>  
+            </div>
+           
+            <div class="row my-row report-box">
+              <div class="col col-sm-2 my-col overviewcol"id="overview1" > <h2 class="head"> 162.9k</h2><a href="#" class="headlink"> Last 7 Days website visits</a> <br> <a href="#" class="increment"> 10% Increases from Last Week</a></div>
+              <div class="col col-sm-2 my-col overviewcol"id="overview3" > <h2 class="head">4.3k</h2> <a href="#" class="headlink"> Demos Scheduled</a><br> <a href="#" class="increment"> 12% Increases from Last Week</a></div>
+              <div class="col col-sm-2 my-col overviewcol"id="overview2" > <h2 class="head">2.1k</h2> <a href="#" class="headlink"> New Signups </a><br> <a href="#" class="increment"> 3% Decrease from Last Week</a></div>
+              <div class="col col-sm-2 my-col overviewcol"id="overview4" > <h2 class="head">541</h2> <a href="#" class="headlink"> Ticket Submitted</a><br> <a href="#" class="increment"> 3% Decreases from Last Week</a></div>
+             </div>
+            <!---------------------------------Report table-------------------------------------  -->
+             <div class="col col-sm-6 my-col report-table-col">
+               <table class="report-table ">
+                 <!-- table-borderless -->
+                 <tbody>
+                   <tr>
+                    <th scope="row"></th>
+                     <td class="table-head my-td">Recent Order </td>
+                     <td class="table-head"></td>
+                     <td class="my-td table-head"><button class="see-more"> See more</button></td>
+                   </tr>
+                   <tr class="second-row">
+                    <th scope="row"></th> 
+                    <td class="row-2-element my-td">
+                      <button > 
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              File Name
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Item1</a>
+              <a class="dropdown-item" href="#">Item2</a>
+              <div class="dropdown-divider"></div>
+              </button> </td>
+                    <td class="row-2-element my-td">
+                      <button > 
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Date
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Item1</a>
+              <a class="dropdown-item" href="#">Item2</a>
+              <div class="dropdown-divider"></div>
+              </button> </td>
+                    <td class="row-2-element my-td">
+                      <button > 
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Size
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Item1</a>
+              <a class="dropdown-item" href="#">Item2</a>
+              <div class="dropdown-divider"></div>
+              </button> </td>
+                   </tr>
+
+                <tr class="row-3">
+                  <th scope="row"></th>
+                  <td class="my-td row-3-element"><i class="fa fa-file-archive-o fa-fw"></i> Xd File</td>
+                  <td class="my-td date"> 01-03-2021</td>
+                  <td class="my-td row-3-element" row-2-element> 3.5mb</td>
+                </tr>
+                <tr class="row-3">
+                  <th scope="row"></th>
+                  <td class="my-td row-3-element"><i class="fa fa-file-image-o fa-fw"></i> Figma File</td>
+                  <td class="my-td date"> 27-02-2021</td>
+                  <td class="my-td row-3-element" row-2-element> 19mb</td>
+                </tr>
+                <tr class="row-3">
+                  <th scope="row"></th>
+                  <td class="my-td row-3-element"><i class="fa fa-folder fa-fw"></i> Documents</td>
+                  <td class="my-td date"> 23-02-2021</td>
+                  <td class="my-td row-3-element" row-2-element> 15mb</td>
+                </tr>
+                <tr class="row-3">
+                  <th scope="row"></th>
+                  <td class="my-td row-3-element"><i class="fa fa-file-sound-o fa-fw"></i> Sound File</td>
+                  <td class="my-td date"> 21-02-2021</td>
+                  <td class="my-td row-3-element" row-2-element> 40mb</td>
+                </tr> 
+                 <tr class="row-3">
+                  <th scope="row"></th>
+                  <td class="my-td row-3-element"><i class="fa fa-file-video-o fa-fw"></i> Media</td>
+                  <td class="my-td date"> 23-02-2021</td>
+                  <td class="my-td row-3-element" row-2-element> 15mb</td>
+                </tr>
+                <tr class="row-3">
+                  <th scope="row"></th>
+                  <td class="my-td row-3-element"><i class="fa fa-file-pdf-o fa-fw"></i> Sals PDF</td>
+                  <td class="my-td date"> 23-02-2021</td>
+                  <td class="my-td row-3-element" row-2-element> 9mb</td>
+                </tr>
+                <tr class="row-3">
+                  <th scope="row"></th>
+                  <td class="my-td row-3-element"><i class="fa fa-file-excel-o fa-fw"></i>Excel File</td>
+                  <td class="my-td date"> 23-02-2021</td>
+                  <td class="my-td row-3-element" row-2-element> 11mb</td>
+                </tr>
+                 </tbody>
+               </table>
+               <!-- <p class="recent-order"> Recent Order</p> -->
+              
+               
+             </div>
+        
+      </div>
+      </div>
+    </div>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* -------------------------------------Side Bar------------------------------------------- */
+.col-sm-3{
+   background-color: rgb(251, 251, 251);
+   
+}
+.title{
+    margin: 20px 10px 10px 20px ;
+   color: rgb(175, 171, 171);
+   text-transform: uppercase;
+   font-size: 25px;
+   font-weight: 600;
+}
+.title span{
+  color: rgb(240, 25, 68);
+}
+.flex-column{
+    margin: 50px 0 0 5px ;
+    font-size: 15px;
+    font-weight: 600;
+}
+.nav-link:first-child {
+    color:rgb(6, 6, 157);
+}
+.nav-link{
+    color: rgb(175, 171, 171);
+    margin-bottom: 10px;
+}
+.nav-link:hover{
+    color: crimson;
+}
+#my-row{
+  
+ margin: 20px 5px 20px 5px   ;
+}
+.user-category{
+    margin-top: 50px;
+    list-style-type: none;
+    font-size: 10px ;
+    font-weight: 800;
+}
+.user-category li{
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.viewall{
+    border: none;
+    color: black;
+    background-color: white;
+    font-weight: 700;
+}
+.userlink{
+      font-weight: 800;
+    color: black;
+    text-decoration: none;
+    margin: 0 10px 0 0;
+}
+button a{
+    color:black;
+}
+.user-type{
+    margin: 10px 10px 10px 0 ;
+}
+.user-type p{
+    margin: 20px 0 0 0;
+}
+.profile{
+margin-top:50px ;
+}
+.admin-profile{
+    color: black;
+}
+.activeuser{
+    color: rgb(64, 62, 62);
+}
+/* --------------------------------------Side Bar end---------------------------------------------- */
+/* ---------------------------------------Center Portion-------------------------------------------------- */
+#search{
+    width: 70%;
+    margin: 10px 5px 5px 10px;
+    box-shadow: 2px 2px lightgrey;
+    border-radius: 5px;
+    border: none;
+}
+.filter{
+      width:150px;
+      height: 40px;
+      margin: 10px 5px 5px 10px;
+      background-color: white;
+      border: none;
+       color: grey;
+      box-shadow: 2px 2px lightgrey;
+      border-radius: 5px;
+      font-size: 15px;
+
+}
+#navbarDropdown{
+    color: grey;
+    font-weight: 500;
+}
+/* ---------------------------------- last notification column----------------------------- */
+#notification{
+    margin: 10px;
+    color: grey;
+    outline: none;
+}
+.fa-bell{
+    color: grey;   
+}
+#profile{
+    outline: none;
+    margin: 10px ;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: crimson;
+}
+/* ------------------------------- last notification column end------------------------------- */
+ /* -------------------------------- overview section------------------------------------------ */
+
+#history{
+    margin: 40px 10px 10px 100px;
+    width:200px;
+}
+#Analytics-Overview{
+    width: 700px;
+  margin: 20px 100px 10px 50px;
+}
+/* ----------------------------------Report box section--------------------------------------------- */
+.report-box{
+    margin: 10px 0px 10px 10px;
+    padding: 0;
+}
+.overviewcol{
+    background-color:rgb(251, 241, 222);
+    border: none;
+    border-radius: 10px;
+    width:300px;
+    margin: 10px 30px 10px 30px;
+    height: 120px;
+    padding-top:10px ;
+    text-align: center;
+    color: black;
+}
+#overview1{
+    background-color: rgb(232, 250, 255) ;
+    margin-left: 80px !important;
+    /* color: black; */
+}
+  #overview3{
+ background-color: rgb(255, 227, 255);
+  }
+  a.headlink{
+      color: black;
+      font-size: 10px;
+      font-weight: 700;
+  }
+  a.headlink:hover{
+      color: crimson;
+  }
+  a.increment{
+      color: grey;
+      font-size: 10px;
+      font-weight: 700;
+      text-align: center;
+      word-spacing: 1px;
+  }
+  a.increment:hover{
+      color: crimson;
+  }
+
+.table-head{
+    width: 250px;
+    font-size: 20px ;
+    font-weight: 500;
+    padding: 10px 10px 10px 10px;
+}
+.see-more{
+    background-color: white;
+    border: 1px solid rgb(211, 208, 208);
+    border-radius: 5px;
+    /* box-shadow: 2px 2px lightgrey; */
+    padding: 3px;
+    outline: none;
+    color: rgb(54, 48, 48);
+    font-weight: 700;
+    font-size: 10px;
+    width: 70px;
+}
+
+ .row-2-element button{
+  width:100px;
+  height: 20px;
+  margin-bottom: 20px;
+  /* padding: 5px; */
+  background-color: white;
+  border: none;
+  font-size: 12px;
+  text-align: left;
+}
+.row-3-element{
+    padding: 5px 5px 10px 15px;
+     font-size: 15px;
+     font-weight: 600;
+}
+.date{
+    color: grey;
+    font-weight: 600;
+}
+.report-table-col{
+    box-shadow: 2px 2px 2px 2px rgb(231, 229, 229);
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.overview-row{
+    margin-top: 30px;
+}
